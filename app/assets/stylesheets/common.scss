@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #AA0000;
+  width: 100%;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.partioal {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+footer{
+  background-color: rgb(185, 44, 44);
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  position: absolute;
+  bottom: 0px;
+}
+
+h1{
+  color: azure;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+
+table th{
+  background-color: #FFCCCC;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+table td {
+  background-color: #f9ecd5;
+  padding: 10px 20px;
+}
+
+li{
+  list-style: none;
+}
+
+//index.html.erb
+
+.main_container{
+  margin: 50px 15px;
+}

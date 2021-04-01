@@ -1,0 +1,12 @@
+ja:
+  activerecord:
+    models:
+      schedule: スケジュール  #g
+
+    attributes:
+      schedule:
+        all_day: 一日中  #g
+        end_day: 終了日  #g
+        memo: メモ  #g
+        start_day: 開始日  #g
+        title: 題名  #g

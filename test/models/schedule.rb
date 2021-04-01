@@ -1,0 +1,2 @@
+class Scedule < ApplicationRecord
+end
