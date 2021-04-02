@@ -24,15 +24,19 @@
         <tr>
           <td><%= schedule.id %></td>
           <td><%= schedule.title %></td>
-          <td><%= schedule.start_day %></td>
-          <td><%= schedule.end_day %></td>
-          <td><%= schedule.all_day %>
+          <td><%= schedule&.start_day&.strftime('%Y年%-m月%-d日') %></td>
+          <td><%= schedule&.end_day&.strftime("%Y年%-m月%-d日") %></td>
+          <% if schedule.all_day %>
+            <td>○</td>
+          <% else %>
+            <td>　</td>
+          <% end %>
           <td><%= schedule.updated_at.to_s(:datetime_jp) %></td>
           <td>
             <%= link_to "確認", schedule %>
           </td>
-          <td><
-            <%= link_to "編集", [:edit, schedule] %>
+          <td>
+            <%= link_to "編集",[ :edit, schedule] %>
           </td>
           <td>
             <%= link_to "削除", schedule, method: :delete, data: {confirm: '本当に削除しますか？'} %>
